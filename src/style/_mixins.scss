@@ -2,3 +2,21 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin flex-layout(
+  $flex-direction: row,
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $align-content: flex-start
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  align-content: $align-content;
+}
+
+@mixin button-variant($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+}
