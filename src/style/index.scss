@@ -83,6 +83,8 @@
   width: 80%;
 }
 
+// TODO feedback: 这里应该直接继承.button-base,然后把width作为button-variant的一个参数，这样.section-base-button就不需要存在了
+//  但是总的来说对Sass的继承使用场景还算是理解了
 .section-button-login {
   @extend .section-base-button;
   @include button-variant($primary-color, transparent);

@@ -17,8 +17,11 @@
       </nav>
     </header>
     <main class="main">
+<!--      TODO Feedback: 这里应该是使用form标签，因为它就是一个Form-->
       <section class="login-section">
+<!--        TODO Feedback: 这里的p标签使用正确，good-->
         <p class="section-title">查看世界上正在发生的事情</p>
+
         <div class="input-div">
           <label for="username" class="input-label">电话、邮箱地址或用户名</label>
           <input type="text" id="username" class="input"/>
@@ -27,6 +30,8 @@
           <label for="password" class="input-label">密码</label>
           <input type="password" id="password" class="input"/>
         </div>
+<!--        TODO Feedback: css class的命名没有体现业务逻辑-->
+<!--TODO feedback: 我想你这里是想让链接拥有block元素的表现，但是通过套一层div这种做法做法是不对的。正确的做法是给a标签使用display: inline-block          -->
         <div class="section-div"><a href="" class="forgot-password-a">忘记密码？</a></div>
         <button class="section-button-login">登录</button>
         <p>或</p>
